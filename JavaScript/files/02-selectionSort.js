@@ -1,14 +1,4 @@
 (function selectionSort02() {
-  const createArrayWithRandomNumbers = num => {
-    const array = [];
-
-    for (let i = 0; i < num; i += 1) {
-      const randomNumber = Math.floor(Math.random() * (num + 1));
-      array.push(randomNumber);
-    }
-    return array;
-  };
-
   const swapArrayElements = (array, x, y) => {
     const newArray = [...array];
     [newArray[x], newArray[y]] = [newArray[y], newArray[x]];
@@ -18,7 +8,6 @@
   const selectionSort = array => {
     let newArray = [...array];
 
-    // outer loop receives smallest element index and swaps smallest element with first element in the array
     for (let i = 0; i < newArray.length - 1; i += 1) {
       let min = i; // smallest element index
 
@@ -35,6 +24,7 @@
     return newArray;
   };
 
+  // eslint-disable-next-line no-undef
   const exampleArray = createArrayWithRandomNumbers(30);
   console.log('========================================');
   console.log('02 - SELECTION SORT ALGORITHM');
