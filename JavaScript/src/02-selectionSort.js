@@ -5,7 +5,7 @@
     return newArray;
   };
 
-  const selectionSort = array => {
+  const selectionSort = (array) => {
     let newArray = [...array];
 
     for (let i = 0; i < newArray.length - 1; i += 1) {

@@ -2,7 +2,7 @@
   const exampleArray = [2, 4, 9, 1, 0, 5, 3, 6, 8, 7];
   const anotherExampleArray = [19, 28, 39, 100, 24, 33, 99, 12, 48, 8];
 
-  const findSmallestElement = array => {
+  const findSmallestElement = (array) => {
     let smallestElementIndex = 0;
 
     for (let i = 1; i < array.length; i += 1) {
@@ -13,30 +13,24 @@
     return smallestElementIndex;
   };
 
-  const selectionSortAscending = array => {
+  const selectionSortAscending = (array) => {
     let sortedArray = [];
     const unsortedArray = [...array];
 
     for (let i = 0; i < array.length; i += 1) {
       const smallestElementIndex = findSmallestElement(unsortedArray);
-      sortedArray = [
-        ...sortedArray,
-        ...unsortedArray.splice(smallestElementIndex, 1),
-      ];
+      sortedArray = [...sortedArray, ...unsortedArray.splice(smallestElementIndex, 1)];
     }
     return sortedArray;
   };
 
-  const selectionSortDescending = array => {
+  const selectionSortDescending = (array) => {
     let sortedArray = [];
     const unsortedArray = [...array];
 
     for (let i = 0; i < array.length; i += 1) {
       const smallestElementIndex = findSmallestElement(unsortedArray);
-      sortedArray = [
-        ...unsortedArray.splice(smallestElementIndex, 1),
-        ...sortedArray,
-      ];
+      sortedArray = [...unsortedArray.splice(smallestElementIndex, 1), ...sortedArray];
     }
     return sortedArray;
   };

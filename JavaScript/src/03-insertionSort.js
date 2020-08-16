@@ -1,5 +1,5 @@
 (function insertionSort03() {
-  const insertionSort = array => {
+  const insertionSort = (array) => {
     const newArray = [...array];
 
     for (let i = 1; i < newArray.length; i += 1) {
