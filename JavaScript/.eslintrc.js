@@ -14,7 +14,9 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    'no-console': off,
+  },
   settings: {
     'import/resolver': {
       alias: {
