@@ -15,3 +15,7 @@ Algorithms implemented in JavaScript language:
 3.  **INSERTION SORT** algorithm based on [Wikipedia "Insertion sort"](https://pl.wikipedia.org/wiki/Sortowanie_przez_wstawianie "Wikipedia 'Insertion sort'") and [Geeks for Geeks "Insertion sort"](https://www.geeksforgeeks.org/insertion-sort/ "Geeks for Geeks 'Insertion sort'"); **Time Complexity**: O(n<sup>2</sup>).
 
 ## Python
+
+Algorithms implemented in Python language:
+
+1.  **SELECTION SORT** algorithm based on (1) - this algorithm does not actually swap indexes, but creates new array with sorted elements; **Time Complexity**: O(n<sup>2</sup>)

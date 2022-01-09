@@ -4,9 +4,10 @@
  */
 export default function createArrayOfRandomNumbers(num) {
   const arrayOfRandomNumbers = [];
+  const MAX_NUMBER_VALUE = 99;
 
   for (let i = 0; i < num; i += 1) {
-    const randomNumber = Math.floor(Math.random() * (num + 1)); // generates number between 0 to n
+    const randomNumber = Math.floor(Math.random() * (MAX_NUMBER_VALUE + 1)); // generates number between 0 to MAX_NUMBER_VALUE
     arrayOfRandomNumbers.push(randomNumber); // adds generated number at the end of arrayOfRandomNumbers
   }
   return arrayOfRandomNumbers;
