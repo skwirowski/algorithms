@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
+    "watch": "webpack --watch",
     "format:eslint": "eslint */*.js *.js --fix",
     "format:prettier": "prettier */*.js *.js --write",
     "format": "yarn format:eslint & yarn format:prettier"

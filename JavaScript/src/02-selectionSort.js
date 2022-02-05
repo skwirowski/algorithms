@@ -1,3 +1,5 @@
+import createArrayOfRandomNumbers from 'helpers/helperFunctions';
+
 (function selectionSort02() {
   const swapArrayElements = (array, x, y) => {
     const newArray = [...array];
@@ -25,7 +27,7 @@
   };
 
   // eslint-disable-next-line no-undef
-  const exampleArray = createArrayWithRandomNumbers(30);
+  const exampleArray = createArrayOfRandomNumbers(30);
   console.log('========================================');
   console.log('02 - SELECTION SORT ALGORITHM');
   console.log('Unsorted array', exampleArray);

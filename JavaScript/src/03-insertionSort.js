@@ -1,3 +1,5 @@
+import createArrayOfRandomNumbers from 'helpers/helperFunctions';
+
 (function insertionSort03() {
   const insertionSort = (array) => {
     const newArray = [...array];
@@ -16,7 +18,7 @@
   };
 
   // eslint-disable-next-line no-undef
-  const exampleArray = createArrayWithRandomNumbers(30);
+  const exampleArray = createArrayOfRandomNumbers(30);
   console.log('========================================');
   console.log('03 - INSERTION SORT ALGORITHM');
   console.log('Unsorted array', exampleArray);
